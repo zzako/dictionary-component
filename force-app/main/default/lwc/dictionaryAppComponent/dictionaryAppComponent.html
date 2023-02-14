@@ -1,0 +1,16 @@
+<template> 
+    <lightning-card class="slds-p-top_small" title="Dictionary"> 
+    <div class="slds-align_absolute-center slds-p-top_small">
+    <lightning-input variant="label-hidden" placeholder="search here" onchange={getInput}></lightning-input>
+    <lightning-button icon-name="utility:add" onclick={handleSearch}></lightning-button>    
+    </div> 
+    <div class="slds-align_absolute-center slds-p-top_small"> 
+        <div>
+            <p>{data}</p>
+        </div>
+        <div class="slds-p-top_small">
+            <audio controls="controls" src={audio}></audio>
+        </div>
+    </div>
+    </lightning-card>
+</template>
